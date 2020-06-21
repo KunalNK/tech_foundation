@@ -5,6 +5,7 @@
     5  cd
     6  cat /home/kunal/a/b/c/test.txt
     7  mv /home/kunal/a/b/c/test.txt /home/kunal/a/b
-    8  ls /home/kunal/a
-    9  rm -rf a b
-   10  history | less > ex5.txt
+    8  rm -rf c d
+    9  ls /home/kunal/a
+   10  rm -rf a b
+   11  history | less > ex5.txt
