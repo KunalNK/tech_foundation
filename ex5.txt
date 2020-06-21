@@ -1,0 +1,10 @@
+    1  mkdir -p ~/a/b/c/d
+    2  cd ~/a/b/c
+    3  rmdir d
+    4  echo "Kunal 21/06/2020" > test.txt
+    5  cd
+    6  cat /home/kunal/a/b/c/test.txt
+    7  mv /home/kunal/a/b/c/test.txt /home/kunal/a/b
+    8  ls /home/kunal/a
+    9  rm -rf a b
+   10  history | less > ex5.txt
