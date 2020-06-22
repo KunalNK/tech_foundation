@@ -1,11 +1,11 @@
     1  mkdir -p ~/a/b/c/d
     2  cd ~/a/b/c
     3  rmdir d
-    4  echo "Kunal 21/06/2020" > test.txt
+    4  echo "Kunal 22/06/2020" > test.txt
     5  cd
     6  cat /home/kunal/a/b/c/test.txt
     7  mv /home/kunal/a/b/c/test.txt /home/kunal/a/b
-    8  rm -rf c d
+    8  rm -rf c
     9  ls /home/kunal/a
-   10  rm -rf a b
+   10  rm -rf a
    11  history | less > ex5.txt
