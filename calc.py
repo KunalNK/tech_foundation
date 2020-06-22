@@ -23,31 +23,35 @@ print("Please select the option -\n"\
         
 
 # Take input from the user  
-select = int(input("Select operations form 1, 2, 3, 4 :"))
+option = int(input("Enter the options 1, 2, 3, 4 :"))
 
-number_1 = int(input("Enter first number: ") or "8") 
-number_2 = int(input("Enter second number: ") or "4")
-number_3 = int(input("Enter third number: ") or "2") 
-number_4 = int(input("Enter fourth number: ") or "1")  
+#Enter the correct options
+if option not in range(1,5):
+    print("Invalid option!")
+else:
 
-if select==1:
+    number_1 = int(input("Enter first number: ") or "8") 
+    number_2 = int(input("Enter second number: ") or "4")
+    number_3 = int(input("Enter third number: ") or "2") 
+    number_4 = int(input("Enter fourth number: ") or "1")  
+
+if option==1:
     print(number_1, "+", number_2, "+", number_3, "+", number_4, "=",
             add(number_1, number_2,number_3,number_4))
 
 
-elif select==2:
+elif option==2:
     print(number_1, "-", number_2, "-", number_3, "-", number_4, "=",
             sub(number_1, number_2, number_3, number_4))
 
-elif select==3:
+elif option==3:
     print(number_1, "*", number_2, "*", number_3, "*", number_4, "=",
             mul(number_1, number_2, number_3, number_4))
 
-elif select==4:
+elif option==4:
     print(number_1, "/", number_2, "/", number_3, "/", number_4, "=",
             div(number_1, number_2, number_3, number_4))
 
-else:
-    print("Invalid option")
+
 
 
